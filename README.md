@@ -46,12 +46,20 @@ Utilizing ip_Validation_CL.py
 
 Run this program by
 ```bash
-python ip_Validation_CL.py 
+python ip_Validation_CL.py [ip_address] [network] 
 ```
 If python version 3 is not your default version of then use
 ```bash
-python3 ip_Validation_CL.py
+python3 ip_Validation_CL.py [ip_address] [network]
 ```
+Examples:
+```bash
+python ip_Validation_CL.py 192.168.1.13 192.168.1.0/24
+python ip_Validation_CL.py 43.170.89.3 250.224.128.16/30
+python3 ip_Validation_CL.py 13.132.97.10 13.253.128.0/17
+python3 ip_Validation_CL.py 8.79.202.78 8.0.0.0/9
+```
+
 
 Since this is the command line version that takes arguments, you must pass it 
 an ip address first, followed by the network otherwise it won't work.
