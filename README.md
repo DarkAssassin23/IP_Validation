@@ -88,6 +88,9 @@ Example Output:
 ```bash
 python ip_Validation_CL.py 43.170.89.3 250.224.128.16/30
 That IP is not in the network
+
+python3 ip_Validation_CL.py 8.79.202.78 8.0.0.0/9
+That IP is in the network
 ```
 
 -----------------------------------------------------------------------------
