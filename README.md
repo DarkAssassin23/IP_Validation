@@ -7,7 +7,7 @@ GENERAL USAGE NOTES
 
 - There are two versions of the program, which function exactly the same. 
   The first is a basic one for normal users. The second is for slightly
-  more advanced users and utilizes comand line arguments
+  more advanced users and utilizes command line arguments
 
 - This program requires python version 3 to run
 
