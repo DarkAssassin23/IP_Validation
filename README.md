@@ -38,6 +38,22 @@ Finally, it will prompt you if you want to check a new ip and network or not
 if you do not check again the program will exit otherwise the process 
 repeats
 
+Example Output:
+```bash
+python ip_Validation.py
+Enter an IP address: 23.8.203.6
+Enter the network: 128.167.192.0/18
+That IP is not in the network
+
+Would you like to test another (y/n)? y
+Enter an IP address: 45.62.44.130
+Enter the network: 45.62.0.0/16 
+That IP is in the network
+
+Would you like to test another (y/n)? n
+Goodbye
+```
+
 ---------------------------------------------------------------------------
 
 
@@ -67,5 +83,11 @@ an ip address first, followed by the network otherwise it won't work.
 After passing the ip address and network it will check to make sure that they
 are valid, and tells you if the ip address is in the network or not then the
 program exits
+
+Example Output:
+```bash
+python ip_Validation_CL.py 43.170.89.3 250.224.128.16/30
+That IP is not in the network
+```
 
 -----------------------------------------------------------------------------
