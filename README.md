@@ -31,6 +31,7 @@ if the ip address is indeed in the network.
 Finally, it will prompt you if you want to check a new ip and network or not
 if you do not check again the program will exit otherwise the process 
 repeats
+
 ---------------------------------------------------------------------------
 
 
@@ -46,4 +47,5 @@ an ip address first, followed by the network otherwise it won't work.
 After passing the ip address and network it will check to make sure that they
 are valid, and tells you if the ip address is in the network or not then the
 program exits
+
 -----------------------------------------------------------------------------
