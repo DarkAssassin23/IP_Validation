@@ -1,6 +1,4 @@
-IP Validation 
-Version 1.0 
-06/25/2019
+IP Validation Version 1.0 06/25/2019
 
 GENERAL USAGE NOTES
 --------------------
@@ -16,8 +14,14 @@ GENERAL USAGE NOTES
 Utilizing ip_Validation.py
 ----------------------------
 
-Run this program by: python ip_Validation.py (if python version 3 is not 
-your default version of then use python3 ip_Validation.py)
+Run this program by:
+''' bash
+python ip_Validation.py 
+'''
+if python version 3 is not your default version of then use
+'''bash
+python3 ip_Validation.py
+'''
 
 Once launched, the program will ask you for an ip address and network
 If your ip address is invalid, it will tell you and keep prompting you
@@ -40,8 +44,14 @@ repeats
 Utilizing ip_Validation_CL.py
 -----------------------------
 
-Run this program by: python ip_Validation_CL.py (if python version 3 is not 
-your default version of then use python3 ip_Validation_CL.py)
+Run this program by
+'''bash
+python ip_Validation_CL.py 
+'''
+if python version 3 is not your default version of then use
+'''bash
+python3 ip_Validation_CL.py
+'''
 
 Since this is the command line version that takes arguments, you must pass it 
 an ip address first, followed by the network otherwise it won't work.
