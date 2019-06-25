@@ -45,12 +45,12 @@ Enter an IP address: 23.8.203.6
 Enter the network: 128.167.192.0/18
 That IP is not in the network
 
-Would you like to test another (y/n)? y
+Would you like to check another (y/n)? y
 Enter an IP address: 45.62.44.130
 Enter the network: 45.62.0.0/16 
 That IP is in the network
 
-Would you like to test another (y/n)? n
+Would you like to check another (y/n)? n
 Goodbye
 ```
 

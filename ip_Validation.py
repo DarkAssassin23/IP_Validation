@@ -77,7 +77,7 @@ while(running):
 		#respond with y it goes though the process again
 		valid = False
 		while(not valid):
-			go = input("\nWould you like to test another (y/n)? ")
+			go = input("\nWould you like to check another (y/n)? ")
 			if(go.lower()=='n'):
 				running = False
 				print("Goodbye")
