@@ -18,7 +18,7 @@ Run this program by:
 ```bash
 python ip_Validation.py 
 ```
-if python version 3 is not your default version of then use
+If python version 3 is not your default version of then use
 ```bash
 python3 ip_Validation.py
 ```
@@ -48,7 +48,7 @@ Run this program by
 ```bash
 python ip_Validation_CL.py 
 ```
-if python version 3 is not your default version of then use
+If python version 3 is not your default version of then use
 ```bash
 python3 ip_Validation_CL.py
 ```
