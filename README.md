@@ -119,7 +119,7 @@ sure you replace the
 C:\path\to\file
 ```
 Portion, with the actual path to the file, but leave everything else the
-same. All you have to do now is press click on the batch file and it will
+same, including the %*. All you have to do now is press click on the batch file and it will
 run the program 
 
 Additionally, if you want to utilize the Windows Run feature, you can add 
