@@ -44,16 +44,19 @@ def validNetwork(net):
 	except:
 	 	return False
 
-#checks for a valid IP
-if(validIP(sys.argv[1])):
-	#checks for a valid network
-	if(validNetwork(sys.argv[2])):
-		#checks if the ip address given in in the network
-		if(testAddress(sys.argv[1], sys.argv[2])==True):
-			print("That IP is in the network")
+if(len(sys.argv)>1):
+	#checks for a valid IP
+	if(validIP(sys.argv[1])):
+		#checks for a valid network
+		if(validNetwork(sys.argv[2])):
+			#checks if the ip address given in in the network
+			if(testAddress(sys.argv[1], sys.argv[2])==True):
+				print("That IP is in the network")
+			else:
+				print("That IP is not in the network")
 		else:
-			print("That IP is not in the network")
+	  		print("Invalid Network")
 	else:
-	  print("Invalid Network")
+		print("Invalid IP Address")
 else:
-	print("Invalid IP Address")
+	print("Error: No arguments given")
