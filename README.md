@@ -1,6 +1,6 @@
 # IP Validation
-**Version:** 1.0 <br />
-**Published Date:** 06/25/2019
+**Version:** 1.1 <br />
+**Published Date:** 06/26/2019
 
 GENERAL USAGE NOTES
 --------------------

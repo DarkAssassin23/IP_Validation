@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 ######################################################################
 #                                                                    #
 # This script prompts the user for an ip address and for a network   #

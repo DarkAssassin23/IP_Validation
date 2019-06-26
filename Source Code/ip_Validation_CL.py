@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 ######################################################################
 #                                                                    #
 # This script takes in two arguments from the comand line, the first #
