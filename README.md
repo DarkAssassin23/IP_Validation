@@ -113,4 +113,34 @@ python3 ip_Validation_CL.py [ip_address] [network]
 Windows
 ----------------
 
+Windows takes a little more effort. First in each respective .bat file, make
+sure you replace the
+```bash
+C:\path\to\file
+```
+Portion, with the actual path to the file, but leave everything else the
+same. All you have to do now is press click on the batch file and it will
+run the program 
+
+Additionally, if you want to utilize the Windows Run feature, you can add 
+the batch files as path variables. To do this, go to Control Panel --> 
+System --> Advanced System Settings, then click the Advanced tab and select 
+Environment Variables. Here, locate the PATH variable under System Variables 
+and select edit.
+
+Next add the path to the folder where the .bat files are located to the very
+front of that very long string and end it with a semi-colon like so:
+```bash
+C:\path\to\the\bat\files\folder;C:\path\of\a\different\folder.... 
+``` 
+and press ok on all the windows and exit out of Control Panel.
+
+Then you can just do Win + R then either:
+```bash
+ip_Validation 
+```
+or
+```bash
+ip_Validation_CL [ip address] [network]
+```
 
