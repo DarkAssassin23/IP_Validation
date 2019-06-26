@@ -52,10 +52,10 @@ if(len(sys.argv)>1):
 		#checks for a valid network
 		if(validNetwork(sys.argv[2])):
 			#checks if the ip address given in in the network
-			if(testAddress(sys.argv[1], sys.argv[2])==True):
-				print("That IP is in the network")
+			if(testAddress(sys.argv[1], sys.argv[2])==True):	
+				print("That IP: "+str(sys.argv[1])+" is in the network: "+ str(sys.argv[2]))
 			else:
-				print("That IP is not in the network")
+				print("That IP: "+str(sys.argv[1])+" is not in the network: "+str(sys.argv[2]))
 		else:
 	 		print("Invalid Network")
 	else:

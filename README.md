@@ -16,15 +16,6 @@ GENERAL USAGE NOTES
 Utilizing ip_Validation.py
 ----------------------------
 
-Run this program by:
-```bash
-python ip_Validation.py 
-```
-If python version 3 is not your default version of then use
-```bash
-python3 ip_Validation.py
-```
-
 Once launched, the program will ask you for an ip address and network
 If your ip address is invalid, it will tell you and keep prompting you
 until you enter a valid one.
@@ -42,7 +33,7 @@ repeats
 
 Example Output:
 ```bash
-python ip_Validation.py
+./ip_Validation
 Enter an IP address: 23.8.203.6
 Enter the network: 128.167.192.0/18
 That IP is not in the network
@@ -62,23 +53,6 @@ Goodbye
 Utilizing ip_Validation_CL.py
 -----------------------------
 
-Run this program by
-```bash
-python ip_Validation_CL.py [ip_address] [network] 
-```
-If python version 3 is not your default version of then use
-```bash
-python3 ip_Validation_CL.py [ip_address] [network]
-```
-Examples:
-```bash
-python ip_Validation_CL.py 192.168.1.13 192.168.1.0/24
-python ip_Validation_CL.py 43.170.89.3 250.224.128.16/30
-python3 ip_Validation_CL.py 13.132.97.10 13.253.128.0/17
-python3 ip_Validation_CL.py 8.79.202.78 8.0.0.0/9
-```
-
-
 Since this is the command line version that takes arguments, you must pass it 
 an ip address first, followed by the network otherwise it won't work.
 
@@ -88,11 +62,55 @@ program exits
 
 Example Output:
 ```bash
-python ip_Validation_CL.py 43.170.89.3 250.224.128.16/30
+./ip_Validation_CL.py 43.170.89.3 250.224.128.16/30
 That IP is not in the network
 
-python3 ip_Validation_CL.py 8.79.202.78 8.0.0.0/9
+./ip_Validation_CL.py 8.79.202.78 8.0.0.0/9
 That IP is in the network
 ```
 
 -----------------------------------------------------------------------------
+
+Linux/MacOS
+-----------
+
+This program can be run in either of the following ways, using the respective
+MacOS and Linux Versions:
+```bash
+python ip_Validation 
+```
+```bash
+python3 ip_Validation
+```
+```bash
+./ip_Validation
+```
+```bash
+python ip_Validation_CL [ip_address] [network]
+```
+```bash
+python3 ip_Validation_CL [ip_address] [network]
+```
+```bash
+./ip_Validation_CL [ip_address] [network]
+```
+If you chose instead to run the source code, use the following:
+```bash
+python ip_Validation.py
+```
+```bash
+python3 ip_Validation.py
+```
+```bash
+python ip_Validation_CL.py [ip_address] [network]
+```
+```bash
+python3 ip_Validation_CL.py [ip_address] [network]
+```
+
+--------------------------------------
+
+Windows
+----------------
+
+
