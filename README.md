@@ -111,7 +111,7 @@ An optional step you can do is, edit your .bash_profile file so you only have to
 ```bash
 alias ipvalidation='python3 /path/to/your/file/ip_Validation' 
 ```
-And you can call 'ipvalidation whatever you like and you would do the same for the ip_Validation_CL file as well. **Note:** in order for this to take effect you must restart the terminal.
+And you can call 'ipvalidation' whatever you like and you would do the same for the ip_Validation_CL file as well. **Note:** in order for this to take effect you must restart the terminal.
 
 --------------------------------------
 
