@@ -113,6 +113,17 @@ alias ipvalidation='python3 /path/to/your/file/ip_Validation'
 ```
 And you can call 'ipvalidation' whatever you like and you would do the same for the ip_Validation_CL file as well. **Note:** in order for this to take effect you must restart the terminal.
 
+Once you do this all you will need to do is:
+```bash
+ipvalidation
+```
+Or
+```bash
+ipvalidationCL [ip address] [network]
+```
+And unlike the other methods where you had to be in the same directory as the file, this allows you to run the program from any directory while using the terminal
+
+
 --------------------------------------
 
 Windows
