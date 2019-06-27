@@ -13,7 +13,7 @@ GENERAL USAGE NOTES
 
 --------------------------------------------------------------------------
 
-Utilizing ip_Validation.py
+Utilizing IP Validation
 ----------------------------
 
 Once launched, the program will ask you for an ip address and network
@@ -50,7 +50,7 @@ Goodbye
 ---------------------------------------------------------------------------
 
 
-Utilizing ip_Validation_CL.py
+Utilizing IP Validation (Command Line Arguments Version)
 -----------------------------
 
 Since this is the command line version that takes arguments, you must pass it 
