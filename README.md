@@ -1,6 +1,6 @@
 # IP Validation
 **Version:** 1.1 <br />
-**Published Date:** 06/26/2019
+**Published Date:** 06/27/2019
 
 GENERAL USAGE NOTES
 --------------------
@@ -107,6 +107,11 @@ python ip_Validation_CL.py [ip_address] [network]
 ```bash
 python3 ip_Validation_CL.py [ip_address] [network]
 ```
+An optional step you can do is, edit your .bash_profile file so you only have to type the name of the file to run it. To do so add the following line to your .bash_profile file:
+```bash
+alias ipvalidation='python3 /path/to/your/file/ip_Validation' 
+```
+And you can call 'ipvalidation whatever you like and you would do the same for the ip_Validation_CL file as well. **Note:** in order for this to take effect you must restart the terminal.
 
 --------------------------------------
 
