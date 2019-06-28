@@ -1,6 +1,6 @@
 # IP Validation
 **Version:** 1.1 <br />
-**Published Date:** 06/27/2019
+**Published Date:** 06/28/2019
 
 GENERAL USAGE NOTES
 --------------------
@@ -132,11 +132,10 @@ Windows
 Windows takes a little more effort. First in each respective .bat file, make
 sure you replace the
 ```bash
-C:\path\to\file
+C:/path/to/the/file/ip_Validation.py
 ```
 Portion, with the actual path to the file, but leave everything else the
-same, including the %*. All you have to do now is press click on the batch file and it will
-run the program 
+same, including the %*. All you have to do now is press click on the batch file and it will run the program. However, the command line arguments one, will not work this way. You have to manually type that on the command prompt in the directory where your .bat file is saved 
 
 Additionally, if you want to utilize the Windows Run feature, you can add 
 the batch files as path variables. To do this, go to Control Panel --> 
@@ -144,12 +143,7 @@ System --> Advanced System Settings, then click the Advanced tab and select
 Environment Variables. Here, locate the PATH variable under System Variables 
 and select edit.
 
-Next add the path to the folder where the .bat files are located to the very
-front of that very long string and end it with a semi-colon like so:
-```bash
-C:\path\to\the\bat\files\folder;C:\path\of\a\different\folder.... 
-``` 
-and press ok on all the windows and exit out of Control Panel.
+Next add the path to the folder where the .bat files, you should just be able to click 'new' and add the path to the folder and press ok on all the windows and exit out of Control Panel.
 
 Then you can just do Win + R then either:
 ```bash

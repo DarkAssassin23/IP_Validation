@@ -44,7 +44,7 @@ def validNetwork(net):
 	except ValueError:
 		return False
 	except:
-	 	return False
+		return False
 
 if(len(sys.argv)>1):
 	#checks for a valid IP
@@ -56,8 +56,8 @@ if(len(sys.argv)>1):
 				print("That IP: "+str(sys.argv[1])+" is in the network: "+ str(sys.argv[2]))
 			else:
 				print("That IP: "+str(sys.argv[1])+" is not in the network: "+str(sys.argv[2]))
-			else:
-	 		print("Invalid Network")
+		else:
+			print("Invalid Network")
 	else:
 		print("Invalid IP Address")
 else:
