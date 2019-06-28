@@ -1,3 +1,4 @@
+#!python3
 ######################################################################
 #                                                                    #
 # This script takes in two arguments from the comand line, the first #
@@ -10,8 +11,9 @@
 ######################################################################
 
 
-import ipaddress
-import sys
+import ipaddress, sys#, os
+
+#os.system('cls' if os.name == 'nt' else 'clear')
 
 #tests if the ip given is in the given network
 #if so it returns true otherwise it returns false
@@ -42,7 +44,7 @@ def validNetwork(net):
 	except ValueError:
 		return False
 	except:
-	 	return False
+		return False
 
 if(len(sys.argv)>1):
 	#checks for a valid IP
@@ -51,12 +53,12 @@ if(len(sys.argv)>1):
 		if(validNetwork(sys.argv[2])):
 			#checks if the ip address given in in the network
 			if(testAddress(sys.argv[1], sys.argv[2])==True):
-				print("That IP is in the network")
+				print("That IP: "+str(sys.argv[1])+" is in the network: "+ str(sys.argv[2]))
 			else:
-				print("That IP is not in the network")
+				print("That IP: "+str(sys.argv[1])+" is not in the network: "+str(sys.argv[2]))
 		else:
-	  		print("Invalid Network")
+			print("Invalid Network")
 	else:
 		print("Invalid IP Address")
 else:
-	print("Error: No arguments given")
+	print("Error: No Arguments given")

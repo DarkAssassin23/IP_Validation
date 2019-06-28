@@ -8,7 +8,9 @@
 #                                                                    #
 ######################################################################
 
-import ipaddress
+import ipaddress, os
+
+os.system('cls' if os.name == 'nt' else 'clear')
 
 #tests if the ip given is in the given network
 #if so it returns true otherwise it returns false
