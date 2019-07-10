@@ -21,7 +21,7 @@ def testAddress(ip, net):
 #correctly formatted ip address
 def validIP(ip):
 	bits = ip.split('.')
-	if(len(bits)>4):
+	if(len(bits)>4 or len(bits)<4):
 		return False
 	for x in bits:
 		if(x.isdigit()):
