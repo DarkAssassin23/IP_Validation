@@ -8,7 +8,7 @@
 #                                                                    #
 ######################################################################
 
-import ipaddress, os
+import ipaddress, os, readline
 
 os.system('cls' if os.name == 'nt' else 'clear')
 
@@ -44,52 +44,55 @@ def validNetwork(net):
 	 	return False
 
 #the script will run indefinitaly untill the user quits
-running = True
-while(running):
+try:
+	running = True
+	while(running):
 
-	#prompts for a ip address and checks the validity of it
-	#if valid, it then prompts for the network. Otherwise
-	#it tells the user the address is invalid and prompts for
-	#the address again
-	ip = input("Enter an IP address: ")
-	if(validIP(ip)):
+		#prompts for a ip address and checks the validity of it
+		#if valid, it then prompts for the network. Otherwise
+		#it tells the user the address is invalid and prompts for
+		#the address again
+		ip = input("Enter an IP address: ")
+		if(validIP(ip)):
 
-		#prompts for the network and checks the validity of it
-		#if valid, it checks to see if the ip address is in the
-		#network. Otherwise it prompts for the network again
-		netValid = False
-		while(not netValid):
-			net = input("Enter the network: ")
-			if(validNetwork(net)):
-				netValid = True
+			#prompts for the network and checks the validity of it
+			#if valid, it checks to see if the ip address is in the
+			#network. Otherwise it prompts for the network again
+			netValid = False
+			while(not netValid):
+				net = input("Enter the network: ")
+				if(validNetwork(net)):
+					netValid = True
+				else:
+					print("Invalid Network")
+
+			#checks to see if the ip address is in the network
+			if(testAddress(ip, net)==True):
+				print("That IP is in the network")
 			else:
-				print("Invalid Network")
-
-		#checks to see if the ip address is in the network
-		if(testAddress(ip, net)==True):
-			print("That IP is in the network")
-		else:
-			print("That IP is not in the network")
+				print("That IP is not in the network")
 		
-		#while the user's input is neither y or n, it prompts
-		#the user whether they would like to test another ip
-		#address and network.
-		#
-		#if they respond with n the program quits, if they
-		#respond with y it goes though the process again
-		valid = False
-		while(not valid):
-			go = input("\nWould you like to check another (y/n)? ")
-			if(go.lower()=='n'):
-				running = False
-				print("Goodbye")
-				valid = True
-			elif(go.lower()=='y'):
-				valid = True
-			else:			 
- 				print("Invlaid choice")
+			#while the user's input is neither y or n, it prompts
+			#the user whether they would like to test another ip
+			#address and network.
+			#
+			#if they respond with n the program quits, if they
+			#respond with y it goes though the process again
+			valid = False
+			while(not valid):
+				go = input("\nWould you like to check another (y/n)? ")
+				if(go.lower()=='n'):
+					running = False
+					print("Goodbye")
+					valid = True
+				elif(go.lower()=='y'):
+					valid = True
+				else:			 
+ 					print("Invlaid choice")
 
-	#if the ip wasn't valid all the code above gets skipped 
-	#and tells the user the ip is invalid and prompts again
-	else:
-	   print("Invalid IP Address")
+		#if the ip wasn't valid all the code above gets skipped 
+		#and tells the user the ip is invalid and prompts again
+		else:
+	   		print("Invalid IP Address")
+except KeyboardInterrupt:
+	print("\nQuitting...")

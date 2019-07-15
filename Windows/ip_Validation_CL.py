@@ -11,7 +11,7 @@
 ######################################################################
 
 
-import ipaddress, sys#, os
+import ipaddress, sys, readline#, os
 
 #os.system('cls' if os.name == 'nt' else 'clear')
 
